@@ -362,24 +362,39 @@
   }
 
   .work-image-frame {
-    max-height: 250px;
+    max-height: none;
+    aspect-ratio: 1 / 1;
+    border: none;
+  }
+
+  .work-image-fg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .work-image-bg, .work-image-glass {
+    display: none;
   }
   
   .carousel-arrow {
     top: auto;
-    bottom: -10px;
+    bottom: -50px;
     transform: none;
+    background: var(--backgroundColor);
   }
   
   .carousel-arrow-left {
-    left: 10%;
+    left: calc(50% - 60px);
   }
   
   .carousel-arrow-right {
-    right: 10%;
+    right: calc(50% - 60px);
+    left: auto;
   }
   
   .carousel-dots {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 }

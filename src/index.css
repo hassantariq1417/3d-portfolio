@@ -34,7 +34,7 @@ h6 {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -133,5 +133,14 @@ body {
 @media screen and (max-width: 900px) {
   .techstack h2 {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    --cWidth: calc(100% - 32px);
+  }
+  * {
+    max-width: 100%;
   }
 }
